@@ -28,7 +28,7 @@ export class HeroService {
         catchError(this.handleError('getHeroes', []))
       );
   }
-
+//new line in 31 by AyoubBani
   /** GET hero by id. Return `undefined` when id not found */
   getHeroNo404<Data>(id: number): Observable<Hero> {
     const url = `${this.heroesUrl}/?id=${id}`;
